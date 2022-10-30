@@ -35,8 +35,8 @@ Below are some generated molecules:
 [![generated-sample.png](https://i.postimg.cc/RVKvm6B2/generated-sample.png)](https://postimg.cc/F7rMgK1x)
 
 
-##Webapp
-Also Here are some snapshots of the WebApplication:
+## Webapp
+Here are some snapshots of the WebApplication:
 [![39.png](https://i.postimg.cc/j2cMb4MR/39.png)](https://postimg.cc/p59fQzNS)
 [![40.png](https://i.postimg.cc/tg6DTjBS/40.png)](https://postimg.cc/Z9T671tp)
 [![41.png](https://i.postimg.cc/1tcHGKhD/41.png)](https://postimg.cc/jw2PKPjj)
