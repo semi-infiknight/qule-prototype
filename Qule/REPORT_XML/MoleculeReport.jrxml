@@ -1,0 +1,137 @@
+<jasperReport xmlns = "http://jasperreports.sourceforge.net/jasperreports"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://jasperreports.sourceforge.net/jasperreports
+   http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+   name = "jasper_report_template" language = "java" pageWidth = "595"
+   pageHeight = "842" columnWidth = "555" leftMargin = "20" rightMargin = "20"
+   topMargin = "20" bottomMargin = "20">
+	<parameter name="title" class="java.lang.String" />
+	<field name="natural_product_scores" class="java.lang.String"/>
+    <field name="quantitative_estimation_druglikeness_scores" class="java.lang.String"/>
+    <field name="water_octanol_partition_coefficient_scores" class="java.lang.String"/>
+    <field name="synthetic_accessibility_score_scores" class="java.lang.String"/>
+	<title>
+		<band height="20" splitType="Stretch">
+		<staticText>
+				<reportElement mode = "Opaque" x = "267" y = "0" width = "77" 
+					height = "19" backcolor = "#728FCE" />
+            
+				<box>
+					<bottomPen lineWidth = "0.25" lineColor = "#CCCCCC" />
+				</box>
+				<textElement />
+				<text><![CDATA[]]> </text>
+			</staticText>
+			<textField>
+				<reportElement x="255" y="0" width="100" height="20"/>
+				<textElement textAlignment = "Center" verticalAlignment = "Middle">
+					<font isBold = "true" />
+				</textElement>
+				<textFieldExpression class="java.lang.String">
+					 <![CDATA[$P{title}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+      <band height = "23">
+         
+         <staticText>
+            <reportElement mode = "Opaque" x = "0" y = "3" width = "600" 
+               height = "15" backcolor = "#70A9A9" />
+            
+            <box>
+               <bottomPen lineWidth = "1.0" lineColor = "#CCCCCC" />
+            </box>
+            
+            <textElement />
+            <text><![CDATA[]]> </text>
+         </staticText>
+			
+         <staticText>
+            <reportElement x = "0" y = "0" width = "100" height = "15" />
+            
+            <textElement textAlignment = "Center" verticalAlignment = "Middle">
+               <font isBold = "true" />
+            </textElement>
+            
+            <text><![CDATA[NP_scores]]></text>
+         </staticText>
+         
+         <staticText>
+            <reportElement x = "100" y = "0" width = "100" height = "15" />
+            
+            <textElement textAlignment = "Center" verticalAlignment = "Middle">
+               <font isBold = "true" />
+            </textElement>
+            
+            <text><![CDATA[QED_scores]]></text>
+         </staticText>
+		 
+		 <staticText>
+            <reportElement x = "200" y = "0" width = "100" height = "15" />
+            
+            <textElement textAlignment = "Center" verticalAlignment = "Middle">
+               <font isBold = "true" />
+            </textElement>
+            
+            <text><![CDATA[WOPC_scores]]></text>
+         </staticText>
+         
+		 <staticText>
+            <reportElement x = "300" y = "0" width = "100" height = "15" />
+            
+            <textElement textAlignment = "Center" verticalAlignment = "Middle">
+               <font isBold = "true" />
+            </textElement>
+            
+            <text><![CDATA[SAS_scores]]></text>
+         </staticText>
+      </band>
+   </columnHeader>
+    <detail>
+        <band height="51" splitType="Stretch">
+			<staticText>
+				<reportElement mode = "Opaque" x = "0" y = "0" width = "600" 
+					height = "14" backcolor = "#E5ECF9" />
+            
+				<box>
+					<bottomPen lineWidth = "0.25" lineColor = "#CCCCCC" />
+				</box>
+				<textElement />
+				<text><![CDATA[]]> </text>
+			</staticText>
+            <textField>
+                <reportElement x="0" y="0" width="100" height="20"/>
+                <textElement textAlignment = "Center" verticalAlignment = "Middle">
+					<font size = "9" />
+				</textElement>
+                <textFieldExpression class="java.lang.String">
+                  <![CDATA[$F{natural_product_scores}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="100" y="0" width="100" height="20"/>
+                <textElement textAlignment = "Center" verticalAlignment = "Middle">
+					<font size = "9" />
+				</textElement>
+                <textFieldExpression class="java.lang.String">
+                  <![CDATA[$F{quantitative_estimation_druglikeness_scores}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="200" y="0" width="100" height="20"/>
+                <textElement textAlignment = "Center" verticalAlignment = "Middle">
+					<font size = "9" />
+				</textElement>
+                <textFieldExpression class="java.lang.String">
+                  <![CDATA[$F{water_octanol_partition_coefficient_scores}]]></textFieldExpression>
+            </textField>
+			 <textField>
+                <reportElement x="300" y="0" width="100" height="20"/>
+                <textElement textAlignment = "Center" verticalAlignment = "Middle">
+					<font size = "9" />
+				</textElement>
+                <textFieldExpression class="java.lang.String">
+                  <![CDATA[$F{synthetic_accessibility_score_scores}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+</jasperReport>
